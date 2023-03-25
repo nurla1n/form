@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-image:url(https://c4.wallpaperflare.com/wallpaper/586/603/742/minimalism-4k-for-mac-desktop-wallpaper-preview.jpg)
+    }
+    * {
+      box-sizing:border-box;
+    }
+    h1 {
+      text-align:center;
+    }
+ .margin {
+  margin-top:20px;
+ }
+#name,#department  {
+  width:300px;
+  height:25px;
+  border-radius:5px;
+  border:1px solid gray;
+}
+#textarea {
+  width:300px;
+  height:60px;
+  resize: none;
+  border:1px solid gray;
+  border-radius:5px;
+
+}
+#select {
+  width:200px;
+  height:27px;
+  border-radius:5px;
+  border:1px solid gray;
+  padding:5px;
+}
+input[type=submit]{
+  width:130px;
+  height:35px;
+ background-color:blue;
+ color:white;
+ border-radius:10px;
+ font-size:17px;
+ padding:5px;
+ 
+
+}
+
+input[type=radio],input[type=checkbox]{
+  accent-color:blue;
+}
+.general {
+  
+  border:1px solid black;
+  width:600px;
+  padding:25px;
+  height:507px;
+  background-color:aquamarine;
+  border-radius:20px;
+}
+.flex {
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+margin-top:70px;
+  
+
+}
+.sub {
+  display:flex;
+  justify-content:center;
+  margin-top:30px;
+}
+.general:hover {
+  box-shadow: 8px 8px 10px red;
+}
+input[type=text]:focus{
+  background-color:aqua;
+
+}
+
+  </style>
+</head>
+<body>
+  <div class="flex">
+  <div class="general">
+<h1>Employee Interests Survey Form</h1>
+<form>
+  <div class="margin">
+<label for="name">Enter your name:</label>
+<input type="text" id="name">
+</div>
+<div class="margin">
+<label for="department">Enter your department:</label>
+<input type="text" id="department">
+</div>
+<div class="margin">
+<label for="textarea">Tell us a little about yourself:</label>
+<textarea id="textarea" ></textarea>
+</div>
+<div class="margin">
+  <label>Do you exercise at home?</label>
+  <input type="radio" id="Yes" name="radio">
+  <label for="Yes">Yes</label>
+  <input type="radio" id="No" name="radio">
+  <label for="No">No</label>
+</div>
+<div class="margin">
+ <label>How do you like to read about your favourite topics?</label>
+</div>
+<div class="margin">
+  <input type="checkbox" id="books">
+  <label for="books">Books</label>
+  <input type="checkbox" id="online">
+  <label for="online">Online resources</label>
+  <input type="checkbox" id="phone">
+  <label for="phone">Phone apps</label>
+  <input type="checkbox" id="magazine">
+  <label for="magazine">Magazines</label>
+</div>
+<div class="margin">
+  <label for="select">What genre of movies do you like?</label>
+  <select id="select">
+    <option>Comedy</option>
+    <option>Drama</option>
+    <option>Action</option>
+    <option>Adventure</option>
+  
+  </select>
+</div>
+<div class="sub">
+  <input type="submit" value="Submit form">
+</div>
+</form>
+
+</div>
+</div>
+</body>
+</html>
